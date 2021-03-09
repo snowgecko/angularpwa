@@ -1,0 +1,30 @@
+<!--not only is [note]=selectedNote put into the tag declaration (you have to?) declare it as an @Input and then use it
+		@Input() note: Note;
+--> 
+<div *ngIf="note">
+<!--  	<h2>{{note.name | uppercase}} Details</h2>
+  	<div><span>id: </span>{{note.id}}</div>
+  	<div>
+    	<label for="note-name">Note name from note-detail: </label>
+    	<input id="note-name" [(ngModel)]="note.name" placeholder="name">
+  	</div>
+| safe: 'html'"
+-->
+<mat-accordion class="example-headers-align">
+<mat-expansion-panel>
+	<mat-expansion-panel-header><mat-panel-title>{{note.name | uppercase}}</mat-panel-title></mat-expansion-panel-header>
+	<div [innerHTML]="note.contents | safe: 'html'" width="100%" class="contents"></div>
+</mat-expansion-panel>	
+<mat-expansion-panel>
+	<mat-expansion-panel-header><mat-panel-title>{{note.question2 | uppercase}}</mat-panel-title></mat-expansion-panel-header>
+	<div [innerHTML]="note.contents2 | safe: 'html'" width="100%" class="contents"></div>
+</mat-expansion-panel>	
+<mat-expansion-panel>
+	<mat-expansion-panel-header><mat-panel-title>{{note.question3 | uppercase}}</mat-panel-title></mat-expansion-panel-header>
+	<div [innerHTML]="note.contents3 | safe: 'html'" width="100%" class="contents"></div>
+</mat-expansion-panel>	
+	<button (click)="save()">save</button>
+	<button (click)="goBack()">go back</button>
+</mat-accordion>
+</div>
+<!--<app-messages></app-messages>-->

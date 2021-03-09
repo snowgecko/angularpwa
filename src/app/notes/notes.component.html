@@ -1,0 +1,47 @@
+<!--Oringal Windstorm details set fixed in notes.compoenent
+<h2>{{note.name | uppercase}} Details</h2>
+<div><span>id: </span>{{note.id}}</div>
+<div><span>name: </span>{{note.name}}</div>
+
+<div>
+  <label for='name'>Note name: </label>
+  <input id='name' [(ngModel)]="note.name" placeholder="name">
+</div>
+-->
+<!--all runs from selectedNote as selected from above list and define in onSelect(note)-->
+<!--the below is moved to note-detail as can be seen below. 
+<div *ngIf="selectedNote">
+  <h2>{{selectedNote.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedNote.id}}</div>
+  <div>
+    <label for="hero-name">Note name: </label>
+    <input id="hero-name" [(ngModel)]="selectedNote.name" placeholder="name">
+  </div>
+</div>
+--> 
+<!--[note]="selectedNote" is an Angular property binding.
+Presume its similar to the code in notes.compoent.ts 
+onSelect(note: Note): void {
+  		this.selectedNote = note;
+	}
+	//so I presume instead of relying on selectedNote. etc, the [note] is carried through to note-detail then that is used. 
+<ul class="notes">
+note = type object // notes = notes as declared to be notes = NOTES (the array set in mock-data)
+	<li *ngFor="let note of notes" (click)="onSelect(note)" [class.selected]="note === selectedNote">
+    	<span class="badge">{{note.id}}</span> {{note.name}}
+  	</li>
+</ul>
+-->
+
+<h2>My Notes</h2>
+
+<!--with router (click)="onSelect(hero)"-->
+<ul class="notes">
+	<li *ngFor="let note of notes" routerLink="/note/{{note.id}}" routerLinkActive="active" >
+		<span class="badge">{{note.id}}</span> {{note.name}}
+		<button class="delete" title="delete note" (click)="delete(note)">x</button>
+	</li>
+</ul>
+
+<app-note-search></app-note-search>
+<app-messages></app-messages>

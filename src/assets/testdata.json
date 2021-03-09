@@ -1,0 +1,30 @@
+ [{
+ 	"id": 11,
+ 	"name": "Gastrointestinal", 
+	"question1": "Question GI contents", 
+	"contents": "Testing GI contents 1", 
+	"question2": "Question GI 2", 
+	"contents2": "Testing GI contents 2", 	
+	"question3": "Question GI 3", 
+	"contents3": "Testing GI contents 3" 	
+ }, {
+ 	"id": 12,
+ 	"name": "Cardiovascular",
+	"question1": "Question Cardiovascular contents", 
+	"contents": "Testing Cardiovascular contents 1", 
+	"question2": "Question Cardiovascular 2", 
+	"contents2": "Testing Cardiovascular contents 2", 	
+	"question3": "Question Cardiovascular 3", 
+	"contents3": "Testing Cardiovascular contents 3" 	
+ }, {
+ 	"id": 13,
+ 	"name": "Cardiac Pacing",
+	"question1": "Question Cardiovascular contents", 
+	"contents": "<h2>Cardiac Pacing</h2><p>Surgeons put in Epicardium (ie, outside of heart - because they need to take off).&nbsp;</p><p><strong>Indications : </strong></p><ol><li>Weaning off of CPB (because during CPB cardioplegic , ie asystolic)&nbsp;<ul><li>can take time to get back heart rhythm</li><li>RV pacing wires - to take off bypass - temporary indication</li></ul></li><li>AV nodal dysfunction&nbsp;<ol><li>normally valve or open heart&nbsp;</li><li>AV (local to valves) fibrous skeleton - surrounding valves - aortic valve surgery in particular --&gt; PPM (2%)&nbsp;<ol><li>Direct physical damage&nbsp;</li><li>Oedema of AV node (may occur up to 72hrs after surgery)&nbsp;<ol><li>Epicardial pacing is a bridge to recovery</li></ol></li></ol></li></ol></li><li>Prevention or treatment of secondary bradycardias in high risk patients&nbsp;<ol><li>pre-existent AVN disease&nbsp;</li><li>surgeries with increased risk of bleeding/ischemia/surgical</li><li>patients with complex co-morbities&nbsp;</li><li>-&gt; Ventricular pacing system is required.&nbsp;</li></ol></li><li>Optimisation of post-operative cardiac output&nbsp;<ol><li>this requires use of an atrial pacing system (unless pt. has persistent AF) **arguably most important.&nbsp;</li></ol></li></ol><p>Ventricular pacing can be acutely life-saving&nbsp; -however if you have integretity of AV nodal conduction - then the patient can become hypotensive.&nbsp;</p><p>1st Letter: Pacing, 2nd letter: Sensing, 3rd Letter: Effect (from sensed)</p><p><strong>4 Outcomes of DDD Mode&nbsp;</strong></p><ol><li>Both leads inhibited/sensing only 'back up' normal sinus - no pacing spikes</li><li>Pacing atria/sensing ventricles = rhythm is 'atrially paced' same as AAI</li><li>Sensing atria/pacing ventricles = 'tracking the atrial rate' treating heart block ; same as VDD&nbsp;</li><li>Pacing both atria and ventricles 'AV sequential pacing' 2 pacing spikes</li></ol><p><strong>Pacing settings</strong></p><ul><li>Pacing capture - how much voltage required to pace<ul><li>capture threshold - at what point does the pacing not produce a QRS -&gt; then programme unit to x2-3 threshold&nbsp;</li><li>Normal impedence (200-1500 ohms) - so I = V/R(impedence) so increasing voltage can overcome higher impedence caused by poor wires/system</li><li>Low capture &lt;3V = good&nbsp;</li></ul></li><li>Sensing - sensing threshold is the amplitude of R wave&nbsp;<ul><li>so set VSense to be 1/3 of that so that it captures every R wave and therefore every asystole, but is higher than interference/artefact&nbsp;</li><li>High R wave is better (stronger) eg 6mV giving Vsense of 2mV&nbsp;</li><li>Having to set it lower would pick up interference.&nbsp;</li></ul></li></ul>",
+	"question2": "Question 2", 
+	"contents2": "Testing contents 2", 	
+	"question3": "Question 3", 
+	"contents3": "Testing contents 3" 	
+ }]
+
+

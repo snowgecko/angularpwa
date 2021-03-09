@@ -1,0 +1,15 @@
+<div id="search-component">
+  <label for="search-box">Notes Search</label>
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+
+
+<!--The *ngFor repeats hero objects. Notice that the *ngFor iterates over a list called notes$, not notes. 
+The $ is a convention that indicates notes$ is an Observable, not an array.-->
+  <ul class="search-result">
+    <li *ngFor="let note of notes$ | async" >
+      <a routerLink="/note/{{note.id}}">
+        {{note.name}}
+      </a>
+    </li>
+  </ul>
+</div>
